@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Play Music</string>
+    <string name="main_play">Reprodutor</string>
+    <string name="main_music">Musicas</string>
+    <string name="main_albun">Albuns</string>
+    <string name="main_artista">Artistas</string>
+</resources>

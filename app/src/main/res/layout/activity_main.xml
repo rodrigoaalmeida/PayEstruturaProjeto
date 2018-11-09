@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_music"
+        android:text="@string/main_music"
+        android:background="@color/color_option_music"
+        style="@style/main_text" />
+
+    <TextView
+        android:id="@+id/text_albun"
+        android:text="@string/main_albun"
+        android:background="@color/color_option_albun"
+        style="@style/main_text" />
+
+    <TextView
+        android:id="@+id/text_artista"
+        android:text="@string/main_artista"
+        android:background="@color/color_option_artista"
+        style="@style/main_text" />
+
+    <TextView
+        android:id="@+id/text_play"
+        android:text="@string/main_play"
+        android:background="@color/color_option_play"
+        style="@style/main_text" />
+</LinearLayout>
