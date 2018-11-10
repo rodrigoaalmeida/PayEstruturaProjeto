@@ -3,7 +3,7 @@
     <color name="colorPrimary">#388e3c</color>
     <color name="colorPrimaryDark">#00600f</color>
     <color name="colorAccent">#2196f3</color>
-    <color name="color_background_main">#e0e0e0</color>
+    <color name="color_background_main">#FFF3E0</color>
     <color name="color_text_options_main">#050e74</color>
     <color name="color_option_music">#2196f3</color>
     <color name="color_option_albun">#ff6090</color>

@@ -25,5 +25,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(musicIntent);
             }
         });
+
+        albun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent albunIntent = new Intent(MainActivity.this, AlbunActivity.class);
+                startActivity(albunIntent);
+            }
+        });
+
+        artista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent artistIntent = new Intent(MainActivity.this, ArtistActivity.class);
+                startActivity(artistIntent);
+            }
+        });
+
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent playIntent = new Intent(MainActivity.this, PlayMusicActivity.class);
+                startActivity(playIntent);
+            }
+        });
     }
 }
