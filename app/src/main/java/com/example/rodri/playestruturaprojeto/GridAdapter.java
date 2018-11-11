@@ -12,8 +12,11 @@ import java.util.List;
 
 public class GridAdapter extends ArrayAdapter<Music> {
 
-    public GridAdapter(Context context, List<Music> musicList) {
+    private int mTipo = 0;
+
+    public GridAdapter(Context context, List<Music> musicList, int tipo) {
         super(context, 0, musicList);
+        mTipo = tipo;
     }
 
 
@@ -30,8 +33,13 @@ public class GridAdapter extends ArrayAdapter<Music> {
         ImageView musicImage = listViewItem.findViewById(R.id.image_grid);
         musicImage.setImageResource(atualMusic.getImageMusicId());
 
-        TextView nameMusic = listViewItem.findViewById(R.id.name_grid);
-        nameMusic.setText(atualMusic.getNameMusic());
+        TextView nameAlbun = listViewItem.findViewById(R.id.name_grid);
+        if (mTipo == 1){
+            nameAlbun.setText(atualMusic.getNameAlbun());
+            nameAlbun.setVisibility(View.VISIBLE);
+        }else {
+            nameAlbun.setVisibility(View.GONE);
+        }
 
         TextView nameArtist = listViewItem.findViewById(R.id.grid_name_artist);
         nameArtist.setText(atualMusic.getNameArtist());

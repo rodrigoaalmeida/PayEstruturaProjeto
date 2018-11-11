@@ -6,8 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@color/colorAccent"
-    tools:context=".AlbunActivity">
+    android:background="@color/colorAccent">
 
     <ImageView
         android:id="@+id/image_grid"
@@ -19,10 +18,11 @@
         android:id="@+id/name_grid"
         tools:text="O nome da flor"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:gravity="bottom"
+        android:layout_height="50dp" />
     <TextView
         android:id="@+id/grid_name_artist"
         tools:text="Vera Verão"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp" />
 </LinearLayout>

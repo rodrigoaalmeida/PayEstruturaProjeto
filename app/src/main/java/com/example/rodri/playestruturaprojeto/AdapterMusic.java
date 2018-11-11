@@ -32,6 +32,8 @@ public class AdapterMusic extends ArrayAdapter<Music> {
 
         TextView nameMusic = listViewItem.findViewById(R.id.name_music);
         nameMusic.setText(atualMusic.getNameMusic());
+        nameMusic.setVisibility(View.VISIBLE);
+
 
         TextView nameArtist = listViewItem.findViewById(R.id.name_artist);
         nameArtist.setText(atualMusic.getNameArtist());

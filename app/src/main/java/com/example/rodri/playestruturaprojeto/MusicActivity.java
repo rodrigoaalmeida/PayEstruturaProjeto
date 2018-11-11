@@ -14,7 +14,7 @@ public class MusicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista_music);
 
-        ArrayList<Music> musicList = new ArrayList<>();
+        /*ArrayList<Music> musicList = new ArrayList<>();
         musicList.add(new Music(R.drawable.number_nine, "Senhor do tempo", "Charlie Brown Jr."));
         musicList.add(new Music(R.drawable.number_nine, "Só os loucos sabem", "Charlie Brown Jr."));
         musicList.add(new Music(R.drawable.number_nine, "Papo reto", "Charlie Brown Jr."));
@@ -40,7 +40,9 @@ public class MusicActivity extends AppCompatActivity {
         musicList.add(new Music(R.drawable.number_nine, "O tempo não pára", "Cazuza"));
         musicList.add(new Music(R.drawable.number_nine, "Exagerado", "Cazuza"));
         musicList.add(new Music(R.drawable.number_nine, "Bete balanço", "Cazuza"));
-        musicList.add(new Music(R.drawable.number_nine, "Pro dia nascer feliz", "Cazuza"));
+        musicList.add(new Music(R.drawable.number_nine, "Pro dia nascer feliz", "Cazuza"));*/
+
+        ArrayList<Music> musicList = getIntent().getParcelableArrayListExtra("musicList");
 
         AdapterMusic adapter = new AdapterMusic(this, musicList);
 

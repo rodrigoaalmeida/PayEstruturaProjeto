@@ -13,16 +13,9 @@ public class ArtistActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist);
 
-        ArrayList<Music> artistList = new ArrayList<>();
-        artistList.add(new Music(R.drawable.number_ten, "Senhor do tempo", "Charlie Brown Jr."));
-        artistList.add(new Music(R.drawable.number_ten, "Darlin", "Avril Lavigne"));
-        artistList.add(new Music(R.drawable.number_ten, "Anna Júlia", "Los Hermanos"));
-        artistList.add(new Music(R.drawable.number_ten, "Apenas mais uma", "Nx Zero"));
-        artistList.add(new Music(R.drawable.number_ten, "Na sua estante", "Pitty"));
-        artistList.add(new Music(R.drawable.number_ten, "Epitáfio", "Titãs"));
-        artistList.add(new Music(R.drawable.number_ten, "O tempo não pára", "Cazuza"));
+        ArrayList<Music> musicList = getIntent().getParcelableArrayListExtra("musicList");
 
-        GridAdapter adapter = new GridAdapter(this, artistList);
+        GridAdapter adapter = new GridAdapter(this, musicList, 0);
 
         GridView gridView = findViewById(R.id.grid_view);
 
