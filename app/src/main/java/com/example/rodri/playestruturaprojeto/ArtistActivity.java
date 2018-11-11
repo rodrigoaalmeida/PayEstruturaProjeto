@@ -15,7 +15,29 @@ public class ArtistActivity extends AppCompatActivity {
 
         ArrayList<Music> musicList = getIntent().getParcelableArrayListExtra("musicList");
 
-        GridAdapter adapter = new GridAdapter(this, musicList, 0);
+        int controle = 0;
+        ArrayList<Music> artistList = new ArrayList<>();
+        String nameArtist = "";
+        artistList.add(new Music(musicList.get(0).getImageMusicId(), musicList.get(0).getNameMusic(), musicList.get(0).getNameAlbun(), musicList.get(0).getNameArtist()));
+        for (Music item : musicList) {
+            if (!nameArtist.equalsIgnoreCase(item.getNameArtist())) {
+                nameArtist = item.getNameArtist();
+                for (Music artist : artistList) {
+                    if (nameArtist.equalsIgnoreCase(artist.getNameArtist())) {
+                        controle = 0;
+                        break;
+                    }else {
+                        controle = 1;
+                    }
+                }
+                if (controle == 1){
+                    artistList.add(new Music(item.getImageMusicId(), item.getNameMusic(), item.getNameAlbun(), item.getNameArtist()));
+
+                }
+            }
+        }
+
+        GridAdapter adapter = new GridAdapter(this, artistList, 0);
 
         GridView gridView = findViewById(R.id.grid_view);
 

@@ -16,6 +16,8 @@ public class AlbunActivity extends AppCompatActivity {
 
         ArrayList<Music> musicList = getIntent().getParcelableArrayListExtra("musicList");
 
+        //bloco de codigo para montagem de uma lista de albuns com apenas os albuns unicos
+        //tirando assim as repetições
         int controle = 0;
         ArrayList<Music> albunList = new ArrayList<>();
         String nameAlbun = "";
