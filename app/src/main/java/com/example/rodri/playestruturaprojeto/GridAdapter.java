@@ -25,7 +25,7 @@ public class GridAdapter extends ArrayAdapter<Music> {
 
         View listViewItem = convertView;
         if (listViewItem == null){
-            listViewItem = LayoutInflater.from(getContext()).inflate(R.layout.activity_albun, parent, false);
+            listViewItem = LayoutInflater.from(getContext()).inflate(R.layout.grid_layout, parent, false);
         }
 
         Music atualMusic = getItem(position);

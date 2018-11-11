@@ -57,15 +57,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*final ArrayList<Music> albunList = new ArrayList<>();
-        albunList.add(new Music(R.drawable.number_ten, "Senhor do tempo", "Charlie Brown Jr."));
-        albunList.add(new Music(R.drawable.number_ten, "Darlin", "Avril Lavigne"));
-        albunList.add(new Music(R.drawable.number_ten, "Anna Júlia", "Los Hermanos"));
-        albunList.add(new Music(R.drawable.number_ten, "Apenas mais uma", "Nx Zero"));
-        albunList.add(new Music(R.drawable.number_ten, "Na sua estante", "Pitty"));
-        albunList.add(new Music(R.drawable.number_ten, "Epitáfio", "Titãs"));
-        albunList.add(new Music(R.drawable.number_ten, "O tempo não pára", "Cazuza"));*/
-
         albun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -25,6 +25,8 @@ public class AdapterMusic extends ArrayAdapter<Music> {
             listViewItem = LayoutInflater.from(getContext()).inflate(R.layout.activity_music, parent, false);
         }
 
+
+
         Music atualMusic = getItem(position);
 
         ImageView musicImage = listViewItem.findViewById(R.id.image_music);

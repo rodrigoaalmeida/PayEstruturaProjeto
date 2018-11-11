@@ -9,15 +9,18 @@
     tools:context=".PlayMusicActivity">
 
     <ImageView
+        android:id="@+id/image_play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/number_ten"/>
 
     <TextView
+        android:id="@+id/music_play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Musica"/>
     <TextView
+        android:id="@+id/artist_play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Nome artista"/>

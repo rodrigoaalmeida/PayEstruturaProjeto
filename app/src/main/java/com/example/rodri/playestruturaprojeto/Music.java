@@ -63,4 +63,9 @@ public class Music implements Parcelable {
         dest.writeString(mNameAlbun);
         dest.writeString(mNameArtist);
     }
+
+    @Override
+    public String toString() {
+        return mNameMusic;
+    }
 }
