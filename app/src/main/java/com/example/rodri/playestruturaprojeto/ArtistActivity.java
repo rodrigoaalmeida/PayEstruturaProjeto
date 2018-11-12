@@ -1,7 +1,10 @@
 package com.example.rodri.playestruturaprojeto;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import java.util.ArrayList;
@@ -13,10 +16,10 @@ public class ArtistActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista_grid);
 
-        ArrayList<Music> musicList = getIntent().getParcelableArrayListExtra("musicList");
+        final ArrayList<Music> musicList = getIntent().getParcelableArrayListExtra("musicList");
 
         int controle = 0;
-        ArrayList<Music> artistList = new ArrayList<>();
+        final ArrayList<Music> artistList = new ArrayList<>();
         String nameArtist = "";
         artistList.add(new Music(musicList.get(0).getImageMusicId(), musicList.get(0).getNameMusic(), musicList.get(0).getNameAlbun(), musicList.get(0).getNameArtist()));
         for (Music item : musicList) {
@@ -42,5 +45,21 @@ public class ArtistActivity extends AppCompatActivity {
         GridView gridView = findViewById(R.id.grid_view);
 
         gridView.setAdapter(adapter);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String sNameArtist = artistList.get((int) parent.getItemIdAtPosition(position)).getNameArtist();
+                ArrayList<Music> musicArtistList = new ArrayList<>();
+                for (Music item : musicList){
+                    if (sNameArtist.equalsIgnoreCase(item.getNameArtist())){
+                        musicArtistList.add(new Music(item.getImageMusicId(), item.getNameMusic(), item.getNameAlbun(), item.getNameArtist()));
+                    }
+                }
+                Intent musicArtistIntent = new Intent(ArtistActivity.this, MusicActivity.class);
+                musicArtistIntent.putParcelableArrayListExtra("musicList", musicArtistList);
+                startActivity(musicArtistIntent);
+            }
+        });
     }
 }

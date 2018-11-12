@@ -68,4 +68,5 @@ public class Music implements Parcelable {
     public String toString() {
         return mNameMusic;
     }
+
 }
