@@ -21,10 +21,9 @@ public class AdapterMusic extends ArrayAdapter<Music> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listViewItem = convertView;
-        if (listViewItem == null){
+        if (listViewItem == null) {
             listViewItem = LayoutInflater.from(getContext()).inflate(R.layout.activity_music, parent, false);
         }
-
 
 
         Music atualMusic = getItem(position);

@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_music"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:id="@+id/layout_music"
+    android:padding="@dimen/distancia_dez"
     tools:context=".MusicActivity">
 
     <ImageView
         android:id="@+id/image_music"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/number_nine"/>
+        android:layout_width="@dimen/size_container_cinquenta_seis"
+        android:layout_height="@dimen/size_container_cinquenta_seis"
+        android:layout_marginRight="@dimen/distancia_dez" />
+
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/size_container_cinquenta_seis"
         android:layout_weight="1"
-        android:layout_marginLeft="@dimen/text_margin_main"
         android:gravity="center_vertical"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/name_music"
-            tools:text="Nome da musica"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_preto"
+            android:textSize="@dimen/text_size_dezoito"
+            android:textStyle="bold"
+            tools:text="Nome da musica" />
+
         <TextView
             android:id="@+id/name_artist"
-            tools:text="Nome do artista"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_preto"
+            android:textSize="@dimen/text_size_dezesseis"
+            android:textStyle="italic"
+            tools:text="Nome do artista" />
     </LinearLayout>
 </LinearLayout>

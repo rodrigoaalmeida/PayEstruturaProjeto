@@ -32,12 +32,12 @@ public class AlbunActivity extends AppCompatActivity {
                     if (nameAlbun.equalsIgnoreCase(albun.getNameAlbun())) {
                         controle = 0;
                         break;
-                    }else {
+                    } else {
                         controle = 1;
                     }
                 }
-                if (controle == 1){
-                        albunList.add(new Music(item.getImageMusicId(), item.getNameMusic(), item.getNameAlbun(), item.getNameArtist()));
+                if (controle == 1) {
+                    albunList.add(new Music(item.getImageMusicId(), item.getNameMusic(), item.getNameAlbun(), item.getNameArtist()));
 
                 }
             }
@@ -49,13 +49,14 @@ public class AlbunActivity extends AppCompatActivity {
 
         gridView.setAdapter(adapter);
 
+        //bloco de codigo que pega o nome do album e mostra apenas as musicas referentes a ele
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String sNameAlbun = albunList.get((int) parent.getItemIdAtPosition(position)).getNameAlbun();
                 ArrayList<Music> musicAlbunList = new ArrayList<>();
-                for (Music item : musicList){
-                    if (sNameAlbun.equalsIgnoreCase(item.getNameAlbun())){
+                for (Music item : musicList) {
+                    if (sNameAlbun.equalsIgnoreCase(item.getNameAlbun())) {
                         musicAlbunList.add(new Music(item.getImageMusicId(), item.getNameMusic(), item.getNameAlbun(), item.getNameArtist()));
                     }
                 }

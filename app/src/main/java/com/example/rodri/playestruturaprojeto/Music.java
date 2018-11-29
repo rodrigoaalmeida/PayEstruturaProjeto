@@ -12,7 +12,7 @@ public class Music implements Parcelable {
     private String mNameAlbun;
     private String mNameArtist;
 
-    public Music(int imageMusicId, String nameMusic, String nameAlbun, String nameArtist){
+    public Music(int imageMusicId, String nameMusic, String nameAlbun, String nameArtist) {
         mImageMusicId = imageMusicId;
         mNameMusic = nameMusic;
         mNameAlbun = nameAlbun;
@@ -34,7 +34,7 @@ public class Music implements Parcelable {
         return mNameMusic;
     }
 
-    public String getNameAlbun(){
+    public String getNameAlbun() {
         return mNameAlbun;
     }
 
@@ -42,15 +42,16 @@ public class Music implements Parcelable {
         return mNameArtist;
     }
 
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator(){
-        public Music createFromParcel(Parcel in){
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
+        public Music createFromParcel(Parcel in) {
             return new Music(in);
         }
 
-        public Music[] newArray(int size){
+        public Music[] newArray(int size) {
             return new Music[size];
         }
     };
+
     @Override
     public int describeContents() {
         return 0;

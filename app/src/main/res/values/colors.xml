@@ -9,4 +9,5 @@
     <color name="color_option_albun">#ff6090</color>
     <color name="color_option_artista">#ff5722</color>
     <color name="color_option_play">#ffca28</color>
+    <color name="color_text_preto">#000000</color>
 </resources>

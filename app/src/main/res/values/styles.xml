@@ -16,8 +16,15 @@
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_text_options_main</item>
-        <item name="android:layout_marginTop">@dimen/text_margin_main</item>
-        <item name="android:layout_marginBottom">@dimen/text_margin_main</item>
+        <item name="android:layout_marginTop">@dimen/text_margin_main_top</item>
+        <item name="android:layout_marginBottom">@dimen/text_margin_main_botton</item>
+    </style>
+
+    <!--Botões do tocador-->
+    <style name="play_music_button">
+        <item name="android:layout_width">@dimen/size_container_quarenta_oito</item>
+        <item name="android:layout_height">@dimen/size_container_quarenta_oito</item>
+        <item name="android:layout_margin">@dimen/distancia_dez</item>
     </style>
 
 </resources>

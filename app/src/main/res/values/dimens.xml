@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_height_main">56dp</dimen>
+    <dimen name="text_size_dezesseis">16sp</dimen>
+    <dimen name="text_size_dezoito">18sp</dimen>
     <dimen name="text_size_main">32sp</dimen>
-    <dimen name="text_margin_main">4dp</dimen>
+    <dimen name="text_height_main">56dp</dimen>
+    <dimen name="text_margin_main_botton">4dp</dimen>
+    <dimen name="distancia_dez">10dp</dimen>
+    <dimen name="text_margin_main_top">26dp</dimen>
+    <dimen name="size_container_quarenta_oito">48dp</dimen>
+    <dimen name="size_container_cinquenta">50dp</dimen>
+    <dimen name="size_container_cinquenta_seis">56dp</dimen>
+    <dimen name="size_container_cento_setenta_seis">176dp</dimen>
+    <dimen name="size_container_duzentos">200dp</dimen>
 </resources>

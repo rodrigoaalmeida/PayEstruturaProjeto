@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="176dp"
+    android:layout_width="@dimen/size_container_cento_setenta_seis"
     android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@color/colorAccent">
+    android:padding="@dimen/distancia_dez">
 
     <ImageView
         android:id="@+id/image_grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/number_ten"/>
+        android:layout_marginBottom="@dimen/text_margin_main_botton" />
 
     <TextView
-        android:id="@+id/name_grid"
-        tools:text="O nome da flor"
+        android:id="@+id/name_grid_albun"
         android:layout_width="match_parent"
+        android:layout_height="@dimen/size_container_cinquenta_seis"
+        android:layout_marginBottom="@dimen/text_margin_main_botton"
         android:gravity="bottom"
-        android:layout_height="50dp" />
+        android:textColor="@color/color_text_preto"
+        android:textSize="@dimen/text_size_dezesseis"
+        android:textStyle="bold"
+        tools:text="O nome da flor" />
+
     <TextView
-        android:id="@+id/grid_name_artist"
-        tools:text="Vera Verão"
+        android:id="@+id/name_grid_artist"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="@dimen/size_container_cinquenta"
+        android:layout_marginBottom="@dimen/text_margin_main_botton"
+        android:textColor="@color/color_text_preto"
+        android:textSize="@dimen/text_size_dezesseis"
+        android:textStyle="italic"
+        tools:text="Vera Verão" />
 </LinearLayout>

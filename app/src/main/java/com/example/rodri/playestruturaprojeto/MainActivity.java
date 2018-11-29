@@ -21,32 +21,32 @@ public class MainActivity extends AppCompatActivity {
         TextView play = findViewById(R.id.text_play);
 
         final ArrayList<Music> musicList = new ArrayList<>();
-        musicList.add(new Music(R.drawable.number_nine, "Senhor do Tempo", "Imunidade Musical", "Charlie Brown Jr."));
-        musicList.add(new Music(R.drawable.number_nine, "Só os loucos sabem", "Camisa 10 Joga Bola Até na Chuva", "Charlie Brown Jr."));
-        musicList.add(new Music(R.drawable.number_nine, "Papo reto", "Bocas Ordinárias", "Charlie Brown Jr."));
-        musicList.add(new Music(R.drawable.number_nine, "Só por uma noite", "Bocas Ordinárias", "Charlie Brown Jr."));
-        musicList.add(new Music(R.drawable.number_nine, "Darlin", "Goodbye Lullaby", "Avril Lavigne"));
-        musicList.add(new Music(R.drawable.number_nine, "Girlfriend", "The Best Damn Thing", "Avril Lavigne"));
-        musicList.add(new Music(R.drawable.number_nine, "Bad Reputation", "Goodbye Lullaby", "Avril Lavigne"));
-        musicList.add(new Music(R.drawable.number_nine, "Anna Júlia", "Los Hermanos", "Los Hermanos"));
-        musicList.add(new Music(R.drawable.number_nine, "Apenas mais uma de amor", "Agora", "Nx Zero"));
-        musicList.add(new Music(R.drawable.number_nine, "Daqui pra frente", "Agora", "Nx Zero"));
-        musicList.add(new Music(R.drawable.number_nine, "Cartas pra você", "Agora", "Nx Zero"));
-        musicList.add(new Music(R.drawable.number_nine, "Diferenças", "Agora", "Nx Zero"));
-        musicList.add(new Music(R.drawable.number_nine, "Só rezo", "Sete Chaves", "Nx Zero"));
-        musicList.add(new Music(R.drawable.number_nine, "Cedo ou tarde", "Agora", "Nx Zero"));
-        musicList.add(new Music(R.drawable.number_nine, "Na sua estante", "Anacrônico", "Pitty"));
-        musicList.add(new Music(R.drawable.number_nine, "Equalize", "Admirável Chip Novo", "Pitty"));
-        musicList.add(new Music(R.drawable.number_nine, "Memórias", "Anacrônico", "Pitty"));
-        musicList.add(new Music(R.drawable.number_nine, "Semana que vem", "Admirável Chip Novo", "Pitty"));
-        musicList.add(new Music(R.drawable.number_nine, "Teto de vidro", "Admirável Chip Novo", "Pitty"));
-        musicList.add(new Music(R.drawable.number_nine, "Epitáfio", "A Melhor Banda de Todos os Tempos da Última Semana", "Titãs"));
-        musicList.add(new Music(R.drawable.number_nine, "Porque eu sei que é amor", "Sacos Plásticos", "Titãs"));
-        musicList.add(new Music(R.drawable.number_nine, "É preciso saber viver", "Volume Dois", "Titãs"));
-        musicList.add(new Music(R.drawable.number_nine, "O tempo não pára", "O tempo não pára", "Cazuza"));
-        musicList.add(new Music(R.drawable.number_nine, "Exagerado", "Exagerado", "Cazuza"));
-        musicList.add(new Music(R.drawable.number_nine, "Bete balanço", "Maior Abandonado", "Cazuza"));
-        musicList.add(new Music(R.drawable.number_nine, "Pro dia nascer feliz", "Barão vermelho 2", "Cazuza"));
+        musicList.add(new Music(R.drawable.charlie_brown, "Senhor do Tempo", "Imunidade Musical", "Charlie Brown Jr."));
+        musicList.add(new Music(R.drawable.charlie_brown, "Só os loucos sabem", "Camisa 10 Joga Bola Até na Chuva", "Charlie Brown Jr."));
+        musicList.add(new Music(R.drawable.charlie_brown, "Papo reto", "Bocas Ordinárias", "Charlie Brown Jr."));
+        musicList.add(new Music(R.drawable.charlie_brown, "Só por uma noite", "Bocas Ordinárias", "Charlie Brown Jr."));
+        musicList.add(new Music(R.drawable.avril, "Darlin", "Goodbye Lullaby", "Avril Lavigne"));
+        musicList.add(new Music(R.drawable.avril, "Girlfriend", "The Best Damn Thing", "Avril Lavigne"));
+        musicList.add(new Music(R.drawable.avril, "Bad Reputation", "Goodbye Lullaby", "Avril Lavigne"));
+        musicList.add(new Music(R.drawable.los_hermanos, "Anna Júlia", "Los Hermanos", "Los Hermanos"));
+        musicList.add(new Music(R.drawable.nx_zero, "Apenas mais uma de amor", "Agora", "Nx Zero"));
+        musicList.add(new Music(R.drawable.nx_zero, "Daqui pra frente", "Agora", "Nx Zero"));
+        musicList.add(new Music(R.drawable.nx_zero, "Cartas pra você", "Agora", "Nx Zero"));
+        musicList.add(new Music(R.drawable.nx_zero, "Diferenças", "Agora", "Nx Zero"));
+        musicList.add(new Music(R.drawable.nx_zero, "Só rezo", "Sete Chaves", "Nx Zero"));
+        musicList.add(new Music(R.drawable.nx_zero, "Cedo ou tarde", "Agora", "Nx Zero"));
+        musicList.add(new Music(R.drawable.pitty, "Na sua estante", "Anacrônico", "Pitty"));
+        musicList.add(new Music(R.drawable.pitty, "Equalize", "Admirável Chip Novo", "Pitty"));
+        musicList.add(new Music(R.drawable.pitty, "Memórias", "Anacrônico", "Pitty"));
+        musicList.add(new Music(R.drawable.pitty, "Semana que vem", "Admirável Chip Novo", "Pitty"));
+        musicList.add(new Music(R.drawable.pitty, "Teto de vidro", "Admirável Chip Novo", "Pitty"));
+        musicList.add(new Music(R.drawable.titas, "Epitáfio", "A Melhor Banda de Todos os Tempos da Última Semana", "Titãs"));
+        musicList.add(new Music(R.drawable.titas, "Porque eu sei que é amor", "Sacos Plásticos", "Titãs"));
+        musicList.add(new Music(R.drawable.titas, "É preciso saber viver", "Volume Dois", "Titãs"));
+        musicList.add(new Music(R.drawable.cazuza, "O tempo não pára", "O tempo não pára", "Cazuza"));
+        musicList.add(new Music(R.drawable.cazuza, "Exagerado", "Exagerado", "Cazuza"));
+        musicList.add(new Music(R.drawable.cazuza, "Bete balanço", "Maior Abandonado", "Cazuza"));
+        musicList.add(new Music(R.drawable.cazuza, "Pro dia nascer feliz", "Barão vermelho 2", "Cazuza"));
 
         music.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent playIntent = new Intent(MainActivity.this, PlayMusicActivity.class);
+                playIntent.putParcelableArrayListExtra("playMusic", musicList);
                 startActivity(playIntent);
             }
         });

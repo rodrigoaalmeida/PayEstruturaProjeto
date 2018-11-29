@@ -24,7 +24,7 @@ public class GridAdapter extends ArrayAdapter<Music> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listViewItem = convertView;
-        if (listViewItem == null){
+        if (listViewItem == null) {
             listViewItem = LayoutInflater.from(getContext()).inflate(R.layout.grid_layout, parent, false);
         }
 
@@ -33,15 +33,15 @@ public class GridAdapter extends ArrayAdapter<Music> {
         ImageView musicImage = listViewItem.findViewById(R.id.image_grid);
         musicImage.setImageResource(atualMusic.getImageMusicId());
 
-        TextView nameAlbun = listViewItem.findViewById(R.id.name_grid);
-        if (mTipo == 1){
+        TextView nameAlbun = listViewItem.findViewById(R.id.name_grid_albun);
+        if (mTipo == 1) {
             nameAlbun.setText(atualMusic.getNameAlbun());
             nameAlbun.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             nameAlbun.setVisibility(View.GONE);
         }
 
-        TextView nameArtist = listViewItem.findViewById(R.id.grid_name_artist);
+        TextView nameArtist = listViewItem.findViewById(R.id.name_grid_artist);
         nameArtist.setText(atualMusic.getNameArtist());
 
         return listViewItem;
